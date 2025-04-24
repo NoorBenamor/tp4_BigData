@@ -1,0 +1,5 @@
+,"ID,Patient Age,Patient Sex,Left-Fundus,Right-Fundus,Left-Diagnostic Keywords,Right-Diagnostic Keywords,N,D,G,C,A,H,M,O,filepath,labels,target,filename"
+count,6392
+unique,6392
+top,"0,69,Female,0_left.jpg,0_right.jpg,cataract,normal fundus,0,0,0,1,0,0,0,0,../input/ocular-disease-recognition-odir5k/ODIR-5K/Training Images/0_right.jpg,['N'],""[1, 0, 0, 0, 0, 0, 0, 0]"",0_right.jpg"
+freq,1

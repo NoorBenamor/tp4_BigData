@@ -1,17 +1,15 @@
-FROM python:3.9
+# Use an official Python runtime as the base image
+FROM python:3.9-slim
 
+# Set the working directory in the container
 WORKDIR /app
 
-COPY requirements.txt .  
+# Copy the requirements file and install dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
-RUN pip install --upgrade pip  
+# Copy the project files into the container
+COPY . .
 
-RUN pip install -r requirements.txt  
-
-COPY cleaned_data.csv /data/cleaned_data.csv
-
-
-EXPOSE 8888  
-
-ENTRYPOINT ["python3", "scripts/analyse_data.py"]
-CMD ["bash"]
+# Run the Python script when the container starts
+CMD ["python", "scripts/analyze_data.py"]

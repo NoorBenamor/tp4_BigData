@@ -25,9 +25,9 @@
 ## تشغيل الحاويات وربطها بالشبكة
 -----------
 <pre><code>
-docker run -d --name container1 --network tp4_network -p 8881:8888 nour992/bigdata:1
-docker run -d --name container2 --network tp4_network -p 8882:8888 nour992/bigdata:1
-docker run -d --name container3 --network tp4_network -p 8883:8888 nour992/bigdata:1
+docker run -d --name container1 --network tp4_network -p 8881:8888 nour992/tp4:1
+docker run -d --name container2 --network tp4_network -p 8882:8888 nour992/tp4:1
+docker run -d --name container3 --network tp4_network -p 8883:8888 nour992/tp4:1
 </code></pre>
 -------------
 

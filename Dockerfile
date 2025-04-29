@@ -12,4 +12,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Run the Python script when the container starts
-CMD ["python", "scripts/analyze_data.py"]
+CMD ["bash", "-c", "python /app/scripts/analyze_data.py && exec bash"]
+

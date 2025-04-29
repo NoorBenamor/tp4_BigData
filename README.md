@@ -32,7 +32,8 @@ docker run -d --name container2 --network tp4_network -p 8882:8888 nour992/tp4:1
 docker run -d --name container3 --network tp4_network -p 8883:8888 nour992/tp4:1
 </code></pre>
 -------------
-![Uploading docker6.png…]()
+![docker6](https://github.com/user-attachments/assets/51e19151-aa6d-442f-81fe-23cccccef6d8)
+
 
 ------------
 ## الدخول إلى الحاوية container1
